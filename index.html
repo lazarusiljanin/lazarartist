@@ -171,6 +171,26 @@ justify-content: center;
   }
 }
 
+ .activedugme {
+  box-shadow: 5px 5px 5px red;
+  border-radius: 20px;
+  height: 50px;
+  top: 30px;
+  cursor: pointer;
+left: 50%;
+transform: translateX(-50%);
+  color: red;
+  background-color: yellow;
+  position: absolute;
+}
+.activedugme:hover {
+  background-color: orange;
+}
+.activedugme:hover:active {
+  background-color: red;
+  color: yellow;
+}
+
 
 </style>
 
@@ -214,12 +234,18 @@ justify-content: center;
   <img class="diamondoslika" src="/diamondo.jpg" alt="">
 </div>
 
-
+<button class="activedugme" onclick="otvoripdf()" >
+  KLIKNITE OVDE DA POGLEDATE 
+  <strong>MOJ CV</strong> </button>
+</div>
 
 
 
 <script>
-
+function otvoripdf() {
+  const url = 'https://www.youtube.com'
+  window.open(url)
+}
 
 </script> 
 
