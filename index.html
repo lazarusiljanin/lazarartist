@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Lazar Usiljanin</title>
+</head>
+<body>
+<style>
+ body {
+  height: 1000px;
+  background-color: #85ff3f;
+  padding-top: 22px;
+ }
+
+@media (max-width: 500px) {
+  body {padding-top: 52px;
+  }
+}
+
+ .header {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.411);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+right: 0;
+left: 0;
+  top: 0px;
+  position: fixed;
+ }
+
+@media (max-width: 500px) {
+  .logo {
+    display: flex;
+ min-width: none;
+ max-width: 600px;
+  justify-content: flex-start;
+  }
+  .header {
+    display: flex;
+    height: 60px;
+    display: inline-block;
+  }
+  .desna_sekcija {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+
+ .logo {
+  background-color: rgba(255, 255, 255, 0);
+  
+ }
+ 
+
+ .kontakt {
+  background-color: rgba(173, 216, 230, 0);
+  cursor: pointer;
+  position: relative;
+ }
+ .cv_div {
+padding-top: 10px;
+padding-left: 180px;
+  
+ }
+ .slika {
+
+  left: 0px;
+  right: 0px;
+  
+  
+ }
+
+
+.leva_sekcija {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0);
+  
+  flex-shrink: 0;
+}
+.desna_sekcija {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+background-color: rgba(255, 255, 255, 0);
+width: 500px;
+}
+.logo {
+
+  height: 27px;
+}
+
+.icon {
+  height: 26px;
+cursor: pointer;
+}
+.icon:hover {
+  background-color: #D4af37;
+}
+.pocetna,
+.biografija,
+.telefon,
+.galerija,
+.mail,
+.lokacija,
+.insta,
+.fejs{
+  position: relative;
+}
+
+.tooltip {
+ position: absolute;
+ background-color: #000000;
+ color: white;
+ white-space: nowrap;
+ opacity: 0;
+ right: 1px;
+ 
+ position: absolute;
+}
+.pocetna.tooltip,
+.biografija.tooltip,
+.telefon.tooltip,
+.galerija.tooltip,
+.mail.tooltip,
+.lokacija.tooltip,
+.insta.tooltip,
+.fejs.tooltip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.pocetna:hover .tooltip,
+.biografija:hover .tooltip,
+.telefon:hover .tooltip,
+.galerija:hover .tooltip,
+.mail:hover .tooltip,
+.lokacija:hover .tooltip,
+.insta:hover .tooltip,
+.fejs:hover .tooltip {
+  opacity: 1;
+}
+.icon_serbia {
+  height: 26px;
+}
+.homediv {
+  background-color: red;
+ display: flex;
+ position: relative;
+ flex-direction: row;
+ justify-content: space-between;
+}
+.diamondoslika {
+flex-direction: row;
+flex: 1;
+align-items: center;
+
+}
+
+@media (max-width: 500px) {
+  .diamondoslika {
+    display: flex;
+ min-width: 400px;
+ max-width: 600px;
+ 
+
+  }
+}
+
+
+</style>
+
+<div class="header">
+  <div class="leva_sekcija">
+  <img class="logo" src="photos/lazar_logo.png" ></div>
+
+<div  class="desna_sekcija"  >
+    <div class="pocetna"><img class="icon"  src="photos/home.png" >
+    <div class="tooltip">Početna strana</div></div>
+
+    <div class="biografija"><img class="icon"  src="photos/biography.png" >
+      <div class="tooltip">Biografija</div></div>
+  
+      <div class="galerija"><img class="icon"  src="photos/gallery.png" >
+        <div class="tooltip">Galerija</div></div>
+    
+        <div class="telefon"><img class="icon"  src="photos/phone.png" >
+          <div class="tooltip">Telefon</div></div>
+      
+          <div class="mail"><img class="icon"  src="photos/mail.png" >
+            <div class="tooltip">eMail</div></div>
+        
+            <div class="lokacija"><img class="icon"  src="photos/location.png" >
+              <div class="tooltip">Lokacija</div></div>
+          
+              <div class="insta"><img class="icon"  src="photos/insta.png" >
+                <div class="tooltip">Instagram</div></div>
+
+                <div class="fejs"><img class="icon"  src="photos/face.png" >
+                  <div class="tooltip">Facebook</div></div>
+                
+                <div> <img class="icon_serbia" src="photos/serbia.png" alt=""></div>
+
+                
+</div>
+</div>
+
+
+<div class="homediv">
+  <img class="diamondoslika" src="/photos/diamondo.jpg" alt="">
+</div>
+
+
+
+
+
+<script>
+
+
+</script> 
+
+
+</body>
+
+
+</html>
