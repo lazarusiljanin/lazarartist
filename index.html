@@ -11,6 +11,10 @@
   background-color: #85ff3f;
   padding-top: 22px;
  }
+  @media (max-width: 500px) {
+  body {padding-top: 52px;
+  }
+}
  .header {
   background-color: rgba(255, 255, 255, 0.411);
   display: flex;
@@ -21,8 +25,18 @@ right: 0;
 left: 0;
   top: 0px;
   position: fixed;
-
  }
+  @media (max-width: 500px) {
+  .logo {
+    width: 480px;
+  }
+  .header {
+    height: 60px;
+    display: inline-block;
+  }
+  .desna_sekcija {
+    width: 480px;
+  }
  .logo {
   background-color: rgba(255, 255, 255, 0);
   
