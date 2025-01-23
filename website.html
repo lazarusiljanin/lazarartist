@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Lazar Usiljanin</title>
 </head>
 <body>
 <style>
+  html {
+    scroll-behavior: smooth;
+  }
  body {
   height: 1000px;
-  background-color: #85ff3f;
+  background-color: #3ff2ff;
   padding-top: 22px;
  }
 
@@ -32,12 +34,8 @@ left: 0;
  }
 
 @media (max-width: 500px) {
-  .logo {
-    display: flex;
- min-width: none;
- max-width: 600px;
-  justify-content: flex-start;
-  }
+  
+  
   .header {
     display: flex;
     height: 60px;
@@ -54,7 +52,7 @@ left: 0;
 
  .logo {
   background-color: rgba(255, 255, 255, 0);
-  flex:1;
+  flex: 1;
  }
  
 
@@ -79,7 +77,7 @@ padding-left: 180px;
 
 .leva_sekcija {
   height: 30px;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(168, 30, 30, 0);
   display: flex;
   flex-shrink: 0;
 }
@@ -87,8 +85,8 @@ padding-left: 180px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-background-color: rgba(255, 255, 255, 0);
-
+  background-color: rgba(255, 255, 255, 0);
+ 
 }
 .logo {
 
@@ -100,7 +98,7 @@ background-color: rgba(255, 255, 255, 0);
 cursor: pointer;
 }
 .icon:hover {
-  background-color: #D4af37;
+  background-color: #3ff2ff;
 }
 .pocetna,
 .biografija,
@@ -115,8 +113,8 @@ cursor: pointer;
 
 .tooltip {
  position: absolute;
- background-color: #000000;
- color: white;
+ background-color: #3ff2ff;
+ color: rgb(0, 0, 0);
  white-space: nowrap;
  opacity: 0;
  right: 1px;
@@ -150,12 +148,12 @@ cursor: pointer;
   height: 26px;
 }
 .homediv {
-  background-color: red;
+  background-color: rgba(255, 0, 0, 0.397);
  display: flex;
-
+position: relative;
+ 
 }
 .diamondoslika {
-
 flex: 1;
 justify-content: center;
 
@@ -171,11 +169,11 @@ justify-content: center;
   }
 }
 
- .activedugme {
+.activedugme {
   box-shadow: 5px 5px 5px red;
   border-radius: 20px;
   height: 50px;
-  top: 80px;
+  top: 30px;
   cursor: pointer;
 left: 50%;
 transform: translateX(-50%);
@@ -190,60 +188,80 @@ transform: translateX(-50%);
   background-color: red;
   color: yellow;
 }
-
+.heading {
+  background-color: #009da8;
+}
 
 </style>
 
 <div class="header">
   <div class="leva_sekcija">
-  <img class="logo" src="/lazar_logo.png" ></div>
+  <img class="logo" src="lazar_logo.png" ></div>
 
-<div  class="desna_sekcija"  >
-    <div class="pocetna"><img class="icon"  src="/home.png" >
-    <div class="tooltip">Početna strana</div></div>
 
-    <div class="biografija"><img class="icon"  src="/biography.png" >
-      <div class="tooltip">Biografija</div></div>
+
+
+
   
-      <div class="galerija"><img class="icon"  src="/gallery.png" >
-        <div class="tooltip">Galerija</div></div>
+<div  class="desna_sekcija"  >
+   <a href="website.html"> <div class="pocetna"><img  class="icon"  src="home.png" >
+    <div class="tooltip">Početna strana</div></div></a>
+
+    <a href="Biografija.html"><div class="biografija"><img class="icon"  src="biography.png" >
+      <div class="tooltip">Biografija</div></div></a>
+  
+      <a href="Galerija.html"><div class="galerija"><img class="icon"  src="gallery.png" >
+        <div class="tooltip">Galerija</div></div></a>
     
-        <div class="telefon"><img class="icon"  src="/phone.png" >
-          <div class="tooltip">Telefon</div></div>
+        <a href="Telefon.html"><div class="telefon"><img class="icon"  src="phone.png" >
+          <div class="tooltip">Telefon</div></div></a>
       
-          <div class="mail"><img class="icon"  src="/mail.png" >
-            <div class="tooltip">eMail</div></div>
-        
-            <div class="lokacija"><img class="icon"  src="/location.png" >
-              <div class="tooltip">Lokacija</div></div>
+          <a href="Kontakt.html"><div class="mail"><img class="icon"  src="mail.png" >
+            <div class="tooltip">eMail</div></div></a>
           
-              <div class="insta"><img class="icon"  src="/insta.png" >
-                <div class="tooltip">Instagram</div></div>
+        
+            <a href="Lokacija.html"><div class="lokacija"><img class="icon"  src="location.png" >
+              <div class="tooltip">Lokacija</div></div></a>
+          
+              <a href="Instagram.html"><div class="insta"><img class="icon"  src="insta.png" >
+                <div class="tooltip">Instagram</div></div></a>
 
-                <div class="fejs"><img class="icon"  src="/face.png" >
-                  <div class="tooltip">Facebook</div></div>
+               <a href="Facebook.html"> <div class="fejs"><img class="icon"  src="face.png" >
+                  <div class="tooltip">Facebook</div></div></a>
                 
-                <div> <img class="icon_serbia" src="/serbia.png" alt=""></div>
+                <div> <img class="icon_serbia" src="serbia.png" alt=""></div>      
+</div>
 
-                
 </div>
-</div>
+
+
+
+
+<main>
+<section class="section" id="POČETNASTRANA">
+<h1 class="heading">POČETNA STRANA</h1>
 
 
 <div class="homediv">
   <img class="diamondoslika" src="/diamondo.jpg" alt="">
-</div>
 
 <button class="activedugme" onclick="otvoripdf()" >
-  KLIKNITE OVDE DA POGLEDATE 
+  KLIKOM PREUZMITE 
   <strong>MOJ CV</strong> </button>
 </div>
 
 
 
+
+
+
+
+
+
 <script>
+
 function otvoripdf() {
-  const url = 'https://lazarartist.com/Lazar_Usiljanin_CV_English_final.pdf'
+  const url = 'https://www.youtube.com'
   window.open(url)
 }
 
