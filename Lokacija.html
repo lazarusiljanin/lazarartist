@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<head>
+
+  <title>Lazar Usiljanin</title>
+</head>
+<body>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+ body {
+  height: 1000px;
+  background-color: #3ff2ff;
+  padding-top: 22px;
+ }
+
+@media (max-width: 500px) {
+  body {padding-top: 52px;
+  }
+}
+
+ .header {
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.411);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+right: 0;
+left: 0;
+  top: 0px;
+  position: fixed;
+ }
+
+@media (max-width: 500px) {
+  
+  
+  .header {
+    display: flex;
+    height: 60px;
+    display: inline-block;
+  }
+  .desna_sekcija {
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+}
+
+
+ .logo {
+  background-color: rgba(255, 255, 255, 0);
+  flex: 1;
+ }
+ 
+
+ .kontakt {
+  background-color: rgba(173, 216, 230, 0);
+  cursor: pointer;
+  position: relative;
+ }
+ .cv_div {
+padding-top: 10px;
+padding-left: 180px;
+  
+ }
+ .slika {
+
+  left: 0px;
+  right: 0px;
+  
+  
+ }
+
+
+.leva_sekcija {
+  height: 30px;
+  background-color: rgba(168, 30, 30, 0);
+  display: flex;
+  flex-shrink: 0;
+}
+.desna_sekcija {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0);
+ 
+}
+.logo {
+
+  height: 27px;
+}
+
+.icon {
+  height: 26px;
+cursor: pointer;
+}
+.icon:hover {
+  background-color: #3ff2ff;
+}
+.pocetna,
+.biografija,
+.telefon,
+.galerija,
+.mail,
+.lokacija,
+.insta,
+.fejs{
+  position: relative;
+}
+
+.tooltip {
+ position: absolute;
+ background-color: #3ff2ff;
+ color: rgb(0, 0, 0);
+ white-space: nowrap;
+ opacity: 0;
+ right: 1px;
+ 
+ position: absolute;
+}
+.pocetna.tooltip,
+.biografija.tooltip,
+.telefon.tooltip,
+.galerija.tooltip,
+.mail.tooltip,
+.lokacija.tooltip,
+.insta.tooltip,
+.fejs.tooltip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.pocetna:hover .tooltip,
+.biografija:hover .tooltip,
+.telefon:hover .tooltip,
+.galerija:hover .tooltip,
+.mail:hover .tooltip,
+.lokacija:hover .tooltip,
+.insta:hover .tooltip,
+.fejs:hover .tooltip {
+  opacity: 1;
+}
+.icon_serbia {
+  height: 26px;
+}
+.homediv {
+  background-color: rgba(255, 0, 0, 0.397);
+ display: flex;
+position: relative;
+ 
+}
+.diamondoslika {
+flex: 1;
+justify-content: center;
+
+}
+
+@media (max-width: 500px) {
+  .diamondoslika {
+    display: flex;
+ min-width: 400px;
+ max-width: 600px;
+ 
+
+  }
+}
+
+.activedugme {
+  box-shadow: 5px 5px 5px red;
+  border-radius: 20px;
+  height: 50px;
+  top: 30px;
+  cursor: pointer;
+left: 50%;
+transform: translateX(-50%);
+  color: red;
+  background-color: yellow;
+  position: absolute;
+}
+.activedugme:hover {
+  background-color: orange;
+}
+.activedugme:hover:active {
+  background-color: red;
+  color: yellow;
+}
+.heading {
+  background-color: #009da8;
+}
+
+</style>
+
+<div class="header">
+  <div class="leva_sekcija">
+  <img class="logo" src="photos/lazar_logo.png" ></div>
+
+
+
+
+
+  
+  
+  <div  class="desna_sekcija"  >
+    <a href="website.html"> <div class="pocetna"><img  class="icon"  src="photos/home.png" >
+     <div class="tooltip">Početna strana</div></div></a>
+ 
+     <a href="Biografija.html"><div class="biografija"><img class="icon"  src="photos/biography.png" >
+       <div class="tooltip">Biografija</div></div></a>
+   
+       <a href="Galerija.html"><div class="galerija"><img class="icon"  src="photos/gallery.png" >
+         <div class="tooltip">Galerija</div></div></a>
+     
+         <a href="Telefon.html"><div class="telefon"><img class="icon"  src="photos/phone.png" >
+           <div class="tooltip">Telefon</div></div></a>
+       
+           <a href="Kontakt.html"><div class="mail"><img class="icon"  src="photos/mail.png" >
+             <div class="tooltip">eMail</div></div></a>
+           
+         
+             <a href="Lokacija.html"><div class="lokacija"><img class="icon"  src="photos/location.png" >
+               <div class="tooltip">Lokacija</div></div></a>
+           
+               <a href="Instagram.html"><div class="insta"><img class="icon"  src="photos/insta.png" >
+                 <div class="tooltip">Instagram</div></div></a>
+ 
+                <a href="Facebook.html"> <div class="fejs"><img class="icon"  src="photos/face.png" >
+                   <div class="tooltip">Facebook</div></div></a>
+                 
+                 <div> <img class="icon_serbia" src="photos/serbia.png" alt=""></div>      
+ </div>
+ 
+ </div>
+
+
+
+
+<section class="section" id="BIOGRAFIJA">
+  <h1 class="heading">LOKACIJA</h1>
+  <h2>BRANKA ĆOPIĆA 7, 36340 KONAREVO, KRALJEVO, SRBIJA
+  </h2>
+</section>
+
+
+
+
+
+
+<script>
+
+
+</script> 
+
+
+</body>
+
+
+</html>
