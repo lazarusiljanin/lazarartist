@@ -150,12 +150,18 @@ cursor: pointer;
 }
 .homediv {
   background-color: rgba(255, 0, 0, 0.397);
- width: 360px;
+ display: flex;
 position: relative;
- 
 }
+@media (max-width: 500px) {
+  .homediv {
+    display: flex;
+ min-width: 200px;
+ max-width: 360px;
+  
+  
 .diamondoslika {
-flex: 1;
+flex:1;
 justify-content: center;
 
 }
@@ -163,8 +169,8 @@ justify-content: center;
 @media (max-width: 500px) {
   .diamondoslika {
     display: flex;
- min-width: 400px;
- max-width: 600px;
+ min-width: 200px;
+ max-width: 360px;
  
 
   }
