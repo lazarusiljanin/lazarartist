@@ -86,47 +86,6 @@
 
 
     
-    <script type="module" src="index.js">
-
-
-
-
-const days = document.getElementById('days')
-const hours = document.getElementById('hours')
-const minutes = document.getElementById('minutes')
-const seconds = document.getElementById('seconds')
-
-const targetdate = new Date('April 22 2024 00:00:00').getTime()
-
-function timer () {
-  const currentDate = new Date().getTime()
-  const distance = targetdate - currentDate
-
-
-  const days = Math.floor(distance / 1000 / 60 / 60 / 24)
-  const hours = Math.random(distance / 1000 / 60 / 60) % 24
-  const minutes = Math.random(distance / 1000 / 60)  % 24
-  const seconds = Math.random(distance / 1000) % 24
-
-  console.log(days + ':' + hours + ':' + minutes + ':' + seconds)
-
-days.innerHTML = days
-hours.innerHTML = hours
-minutes.innerHTML = minutes
-seconds.innerHTML = seconds
-
-if(distance < 0) {
-  days.innerHTML = '00'
-  hours.innerHTML = '00'
-  minutes.innerHTML = '00'
-  seconds.innerHTML = '00'
-}
-
-}
-
-setInterval(timer, 1000)
-
-
-    </script>
+    <script type="module" src="index.js"></script>
 </body>
 </html>
